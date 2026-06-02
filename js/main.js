@@ -290,8 +290,8 @@ const filterProducts = query => {
 const renderFetchError = () => {
   productList.innerHTML = `
     <div class="error-panel">
-      <h3>Oops... no se cargaron las guitarras</h3>
-      <p>Hubo un problema al leer el catálogo. Por favor, recarga la página o intenta más tarde.</p>
+      <h3>Lo sentimos</h3>
+      <p>Lo sentimos, no pudimos cargar el catálogo en este momento.</p>
     </div>
   `;
 };
@@ -344,8 +344,6 @@ const init = () => {
   modalClose.addEventListener('click', closeProductModal);
   modalAdd.addEventListener('click', () => { if (currentModalProduct) addToCart(currentModalProduct, selectedColor); closeProductModal(); });
   exploreBtn && exploreBtn.addEventListener('click', () => document.getElementById('catalog').scrollIntoView({ behavior: 'smooth' }));
-
-  document.querySelectorAll('.add-accessory').forEach(btn => btn.addEventListener('click', handleAccessoryClick));
 
   setTimeout(beginnerPrompt, 700);
 };
