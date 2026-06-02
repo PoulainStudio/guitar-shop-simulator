@@ -5,7 +5,9 @@
     "marca": "Aurora",
     "precio": 1200,
     "imagen": "https://images.unsplash.com/photo-1517263904808-5dcf6d9b2cba?auto=format&fit=crop&w=900&q=80",
-    "descripcion": "Tono brillante y cómodo para tocar rock, pop y blues con estilo clásico."
+    "descripcion": "Tono brillante y cómodo para tocar rock, pop y blues con estilo clásico.",
+    "descripcion_larga": "Stratocaster Vintage: cómodo mástil, tres pastillas single-coil y versatilidad para principiantes y profesionales.",
+    "colores": ["Negro","Blanco","Rojo","Azul","Sunburst"]
   },
   {
     "id": 2,
@@ -13,7 +15,9 @@
     "marca": "Midnight",
     "precio": 1450,
     "imagen": "https://images.unsplash.com/photo-1511376777868-611b54f68947?auto=format&fit=crop&w=900&q=80",
-    "descripcion": "Cuerpo sólido con sustain profundo y un sonido cálido para ritmos potentes."
+    "descripcion": "Cuerpo sólido con sustain profundo y un sonido cálido para ritmos potentes.",
+    "descripcion_larga": "Les Paul Studio: cuerpo macizo, pastillas humbucker y sustain legendario. Ideal para blues y rock.",
+    "colores": ["Negro","Sunburst","Rojo"]
   },
   {
     "id": 3,
@@ -21,7 +25,9 @@
     "marca": "Skyline",
     "precio": 1090,
     "imagen": "https://images.unsplash.com/photo-1511379762921-2f997c54a1aa?auto=format&fit=crop&w=900&q=80",
-    "descripcion": "Puente de acero y pastillas brillantes para un timbre nítido y definido."
+    "descripcion": "Puente de acero y pastillas brillantes para un timbre nítido y definido.",
+    "descripcion_larga": "Telecaster Elite: sonido claro y potente, excelente para country, rock y estilos que demandan definición.",
+    "colores": ["Blanco","Negro","Sunburst"]
   },
   {
     "id": 4,
@@ -29,7 +35,9 @@
     "marca": "Oceanic",
     "precio": 820,
     "imagen": "https://images.unsplash.com/photo-1545060894-4d5c3ec591f4?auto=format&fit=crop&w=900&q=80",
-    "descripcion": "Electroacústica bold con cuerpo resonante y un acabado natural elegante."
+    "descripcion": "Electroacústica bold con cuerpo resonante y un acabado natural elegante.",
+    "descripcion_larga": "Acoustic Harmony: una electroacústica equilibrada, perfecta para grabaciones y presentaciones en vivo.",
+    "colores": ["Sunburst","Blanco"]
   },
   {
     "id": 5,
@@ -37,7 +45,9 @@
     "marca": "Nocturne",
     "precio": 1320,
     "imagen": "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?auto=format&fit=crop&w=900&q=80",
-    "descripcion": "Diseño moderno y pastillas especiales para texturas únicas y sonido vintage."
+    "descripcion": "Diseño moderno y pastillas especiales para texturas únicas y sonido vintage.",
+    "descripcion_larga": "Jazzmaster Pro: cuerpo cómodo y pastillas para lograr paisajes sonoros y tonos suaves ideales para indie y jazz.",
+    "colores": ["Negro","Azul","Sunburst"]
   },
   {
     "id": 6,
@@ -45,7 +55,9 @@
     "marca": "Nova",
     "precio": 1570,
     "imagen": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=80",
-    "descripcion": "Silhouette agresiva con tonalidad poderosa y respuesta dinámica superior."
+    "descripcion": "Silhouette agresiva con tonalidad poderosa y respuesta dinámica superior.",
+    "descripcion_larga": "Explorer X: estética imponente, ideal para géneros potentes que necesitan presencia y ataque.",
+    "colores": ["Negro","Rojo"]
   },
   {
     "id": 7,
@@ -53,7 +65,9 @@
     "marca": "Luna",
     "precio": 680,
     "imagen": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=900&q=80",
-    "descripcion": "Nylon, cómodo y perfecto para música clásica, flamenco y fingerstyle."
+    "descripcion": "Nylon, cómodo y perfecto para música clásica, flamenco y fingerstyle.",
+    "descripcion_larga": "Classical Deluxe: acabado cálido, ideal para estudiantes y músicos que buscan comodidad y proyección.",
+    "colores": ["Natural"]
   },
   {
     "id": 8,
@@ -61,7 +75,9 @@
     "marca": "Aurora",
     "precio": 1510,
     "imagen": "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&w=900&q=80",
-    "descripcion": "Estética revolucionaria con sustain excelente y tono agresivo."
+    "descripcion": "Estética revolucionaria con sustain excelente y tono agresivo.",
+    "descripcion_larga": "Flying V Storm: diseño icónico para quienes buscan una guitarra con actitud y sustain extendido.",
+    "colores": ["Negro","Rojo","Sunburst"]
   },
   {
     "id": 9,
@@ -69,7 +85,9 @@
     "marca": "Pulse",
     "precio": 1380,
     "imagen": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?auto=format&fit=crop&w=900&q=80",
-    "descripcion": "Configuración moderna con trémolo y pastillas humbucker para versatilidad."
+    "descripcion": "Configuración moderna con trémolo y pastillas humbucker para versatilidad.",
+    "descripcion_larga": "Super Strat Carbon: electrónica versátil y trémolo para guitarristas que buscan rendimiento y control.",
+    "colores": ["Negro","Azul","Blanco"]
   },
   {
     "id": 10,
@@ -77,6 +95,8 @@
     "marca": "Maverick",
     "precio": 1290,
     "imagen": "https://images.unsplash.com/photo-1527434001645-8800dfea412d?auto=format&fit=crop&w=900&q=80",
-    "descripcion": "Tono cálido con cuerpo semihueco, ideal para jazz, blues y rock suave."
+    "descripcion": "Tono cálido con cuerpo semihueco, ideal para jazz, blues y rock suave.",
+    "descripcion_larga": "Semi-Hollow Vintage: cuerpo semi-hueco que ofrece calidez, resonancia y un sustain equilibrado.",
+    "colores": ["Sunburst","Blanco","Negro"]
   }
 ]
