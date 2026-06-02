@@ -66,31 +66,74 @@
     <section class="accessories" id="descripcion">
       <h3>Completa tu setup</h3>
       <p class="about-lead">Accesorios seleccionados para acompañar cada guitarra con el mejor estilo ochentero.</p>
-      <div class="accessory-grid">
-        <div class="accessory-card" data-name="Púas" data-price="5" data-image="https://images.unsplash.com/photo-1589382237343-8e3d4d9f8b2d?auto=format&fit=crop&w=600&q=60">
-          <img src="https://images.unsplash.com/photo-1589382237343-8e3d4d9f8b2d?auto=format&fit=crop&w=600&q=60" alt="Púas">
-          <h4>Púas pack</h4>
-          <span class="price">$5</span>
-          <button class="add-accessory">Agregar</button>
-        </div>
-        <div class="accessory-card" data-name="Correa" data-price="25" data-image="https://images.unsplash.com/photo-1600789091458-0efb7f7be9a9?auto=format&fit=crop&w=600&q=60">
-          <img src="https://images.unsplash.com/photo-1600789091458-0efb7f7be9a9?auto=format&fit=crop&w=600&q=60" alt="Correa">
-          <h4>Correa premium</h4>
-          <span class="price">$25</span>
-          <button class="add-accessory">Agregar</button>
-        </div>
-        <div class="accessory-card" data-name="Afinador" data-price="35" data-image="https://images.unsplash.com/photo-1585386959984-a4155221d34d?auto=format&fit=crop&w=600&q=60">
-          <img src="https://images.unsplash.com/photo-1585386959984-a4155221d34d?auto=format&fit=crop&w=600&q=60" alt="Afinador">
-          <h4>Afinador digital</h4>
-          <span class="price">$35</span>
-          <button class="add-accessory">Agregar</button>
-        </div>
-        <div class="accessory-card" data-name="Funda" data-price="60" data-image="https://images.unsplash.com/photo-1546443046-ed1ce6ffd1c4?auto=format&fit=crop&w=600&q=60">
-          <img src="https://images.unsplash.com/photo-1546443046-ed1ce6ffd1c4?auto=format&fit=crop&w=600&q=60" alt="Funda">
-          <h4>Funda acolchada</h4>
-          <span class="price">$60</span>
-          <button class="add-accessory">Agregar</button>
-        </div>
+      <div class="product-grid">
+        <article class="product-card" data-name="Púas" data-price="5" data-image="img/puas.jpg">
+          <img src="img/puas.jpg" alt="Pack de púas">
+          <div class="card-body">
+            <div>
+              <p class="eyebrow">Accesorio</p>
+              <h3>Púas (pack)</h3>
+              <p class="muted">Set de 6 púas para distintos ataques y texturas.</p>
+            </div>
+            <div class="product-meta">
+              <span>$5</span>
+              <div class="product-actions">
+                <button class="add-accessory" data-name="Púas" data-price="5" data-image="img/puas.jpg">Agregar</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Correa" data-price="25" data-image="img/correa.jpg">
+          <img src="img/correa.jpg" alt="Correa premium">
+          <div class="card-body">
+            <div>
+              <p class="eyebrow">Accesorio</p>
+              <h3>Correa premium</h3>
+              <p class="muted">Correa acolchada con acabado vintage y seguro metálico.</p>
+            </div>
+            <div class="product-meta">
+              <span>$25</span>
+              <div class="product-actions">
+                <button class="add-accessory" data-name="Correa" data-price="25" data-image="img/correa.jpg">Agregar</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Afinador" data-price="35" data-image="img/afinador.jpg">
+          <img src="img/afinador.jpg" alt="Afinador digital">
+          <div class="card-body">
+            <div>
+              <p class="eyebrow">Accesorio</p>
+              <h3>Afinador digital</h3>
+              <p class="muted">Preciso y compacto, ideal para directo y estudio.</p>
+            </div>
+            <div class="product-meta">
+              <span>$35</span>
+              <div class="product-actions">
+                <button class="add-accessory" data-name="Afinador" data-price="35" data-image="img/afinador.jpg">Agregar</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Funda" data-price="60" data-image="img/funda.jpg">
+          <img src="img/funda.jpg" alt="Funda acolchada">
+          <div class="card-body">
+            <div>
+              <p class="eyebrow">Accesorio</p>
+              <h3>Funda acolchada</h3>
+              <p class="muted">Protección acolchada con acabado resistente y estética retro.</p>
+            </div>
+            <div class="product-meta">
+              <span>$60</span>
+              <div class="product-actions">
+                <button class="add-accessory" data-name="Funda" data-price="60" data-image="img/funda.jpg">Agregar</button>
+              </div>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
   </main>
@@ -145,7 +188,7 @@
 
   <!-- FOOTER COMPARTIDO -->
   <footer class="site-footer">
-    <p>Hecho por Poulain Studio — <a href="#terminos">Términos y Condiciones</a></p>
+    <p>Hecho por Poulain Studio — <a href="terms.html">Términos y Condiciones</a></p>
   </footer>
 
   <!-- Biblioteca SweetAlert2 -->

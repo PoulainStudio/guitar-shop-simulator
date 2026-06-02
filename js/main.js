@@ -134,6 +134,8 @@ const addToCart = (product, color) => {
   }
   saveCart();
   renderCart();
+  // Abrir el panel del carrito automáticamente cuando se agrega un producto
+  openCart();
   Swal.fire({ icon: 'success', title: 'Agregado', text: `${product.nombre} agregado al carrito.`, timer: 1400, showConfirmButton: false, background: '#07020a', color: '#fff' });
 };
 
@@ -274,11 +276,19 @@ const handleCartClick = e => {
 const handleAccessoryClick = e => {
   const btn = e.target.closest('.add-accessory');
   if (!btn) return;
-  const card = btn.closest('.accessory-card');
-  const name = card.dataset.name;
-  const price = card.dataset.price;
-  const image = card.dataset.image;
-  addAccessoryToCart(name, price, image);
+  // Si el botón viene desde una tarjeta de accesorio, armamos un objeto compatible
+  const name = btn.dataset.name || btn.closest('.product-card')?.dataset.name || btn.closest('[data-name]')?.dataset.name;
+  const price = btn.dataset.price || btn.closest('.product-card')?.dataset.price || btn.closest('[data-price]')?.dataset.price;
+  const image = btn.dataset.image || btn.closest('.product-card')?.dataset.image || btn.closest('[data-image]')?.dataset.image;
+  // Construimos un objeto con propiedades equivalentes a las guitarras para reusar addToCart
+  const accessoryProduct = {
+    id: `acc-${name}`,
+    nombre: name,
+    marca: 'Accesorio',
+    precio: Number(price),
+    imagen: image
+  };
+  addToCart(accessoryProduct);
 };
 
 const filterProducts = query => {

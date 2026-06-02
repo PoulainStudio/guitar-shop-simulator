@@ -46,6 +46,55 @@ body::before {
   opacity: 0.28;
 }
 
+/* Navigation links: remove underline and add neon hover */
+.site-nav a {
+  text-decoration: none;
+  color: var(--text);
+  padding: 0.45rem 0.9rem;
+  border-radius: 0.6rem;
+  transition: color 180ms ease, box-shadow 180ms ease, transform 160ms ease;
+}
+.site-nav a:hover {
+  color: var(--electric);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(255,0,127,0.10), 0 0 14px var(--neon);
+}
+
+/* Footer centered and tidy */
+.site-footer {
+  text-align: center;
+  padding: 1.6rem 1rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+}
+.site-footer a { text-decoration: none; color: var(--electric); }
+
+/* Contact form premium inputs */
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  max-width: 760px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  background: var(--surface);
+  border: 1px solid rgba(255,255,255,0.06);
+  color: var(--text);
+  border-radius: 0.9rem;
+  font-size: 1rem;
+  transition: box-shadow 180ms ease, border-color 180ms ease, transform 120ms ease;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--electric);
+  box-shadow: 0 12px 40px rgba(255,0,127,0.12), 0 0 18px rgba(0,240,255,0.06);
+  transform: translateY(-2px);
+}
+
 button,
 input {
   font: inherit;
