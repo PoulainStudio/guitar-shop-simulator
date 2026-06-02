@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guitar Center - Guitar Shop Simulator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">GC</span>
+      <div>
+        <h1>Guitar Center</h1>
+        <p>Tienda vintage de guitarras - compra con estilo ochentero</p>
+      </div>
+    </div>
+    <button id="open-cart" class="cart-button">Carrito <span id="cart-count">0</span></button>
+  </header>
+
+  <main class="layout">
+    <section class="hero-panel">
+      <div class="hero-copy">
+        <p>Compra tu próxima guitarra en Guitar Center</p>
+        <h2>Descubre instrumentos vintage con espíritu ochentero</h2>
+        <p>Filtra, compara y agrega guitarras auténticas directamente al carrito. Diseño artístico, sonido legendario.</p>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <strong>10+</strong>
+          <span>Modelos exclusivos</span>
+        </div>
+        <div>
+          <strong>100%</strong>
+          <span>Compra segura</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <div class="catalog-header">
+        <div>
+          <p class="eyebrow">Catálogo</p>
+          <h2>Guitarras disponibles</h2>
+        </div>
+        <div class="filters">
+          <label>
+            Buscar
+            <input id="search-input" type="search" placeholder="Marca o modelo" aria-label="Buscar guitarras">
+          </label>
+        </div>
+      </div>
+      <div id="product-list" class="product-grid"></div>
+    </section>
+  </main>
+
+  <aside class="cart-panel" id="cart-panel">
+    <div class="cart-header">
+      <h3>Tu carrito</h3>
+      <button id="close-cart" class="icon-button">✕</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-summary">
+      <div class="summary-row">
+        <span>Productos</span>
+        <span id="item-count">0</span>
+      </div>
+      <div class="summary-row">
+        <span>Total</span>
+        <strong id="cart-total">$0</strong>
+      </div>
+      <div class="cart-actions">
+        <button id="clear-cart" class="secondary-button">Vaciar carrito</button>
+        <button id="checkout" class="primary-button">Finalizar compra</button>
+      </div>
+    </div>
+  </aside>
+
+</body>
+</html>

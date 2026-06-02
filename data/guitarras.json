@@ -1,0 +1,82 @@
+﻿[
+  {
+    "id": 1,
+    "nombre": "Stratocaster Vintage",
+    "marca": "Aurora",
+    "precio": 1200,
+    "imagen": "https://images.unsplash.com/photo-1517263904808-5dcf6d9b2cba?auto=format&fit=crop&w=900&q=80",
+    "descripcion": "Tono brillante y cómodo para tocar rock, pop y blues con estilo clásico."
+  },
+  {
+    "id": 2,
+    "nombre": "Les Paul Studio",
+    "marca": "Midnight",
+    "precio": 1450,
+    "imagen": "https://images.unsplash.com/photo-1511376777868-611b54f68947?auto=format&fit=crop&w=900&q=80",
+    "descripcion": "Cuerpo sólido con sustain profundo y un sonido cálido para ritmos potentes."
+  },
+  {
+    "id": 3,
+    "nombre": "Telecaster Elite",
+    "marca": "Skyline",
+    "precio": 1090,
+    "imagen": "https://images.unsplash.com/photo-1511379762921-2f997c54a1aa?auto=format&fit=crop&w=900&q=80",
+    "descripcion": "Puente de acero y pastillas brillantes para un timbre nítido y definido."
+  },
+  {
+    "id": 4,
+    "nombre": "Acoustic Harmony",
+    "marca": "Oceanic",
+    "precio": 820,
+    "imagen": "https://images.unsplash.com/photo-1545060894-4d5c3ec591f4?auto=format&fit=crop&w=900&q=80",
+    "descripcion": "Electroacústica bold con cuerpo resonante y un acabado natural elegante."
+  },
+  {
+    "id": 5,
+    "nombre": "Jazzmaster Pro",
+    "marca": "Nocturne",
+    "precio": 1320,
+    "imagen": "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?auto=format&fit=crop&w=900&q=80",
+    "descripcion": "Diseño moderno y pastillas especiales para texturas únicas y sonido vintage."
+  },
+  {
+    "id": 6,
+    "nombre": "Explorer X",
+    "marca": "Nova",
+    "precio": 1570,
+    "imagen": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=80",
+    "descripcion": "Silhouette agresiva con tonalidad poderosa y respuesta dinámica superior."
+  },
+  {
+    "id": 7,
+    "nombre": "Classical Deluxe",
+    "marca": "Luna",
+    "precio": 680,
+    "imagen": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=900&q=80",
+    "descripcion": "Nylon, cómodo y perfecto para música clásica, flamenco y fingerstyle."
+  },
+  {
+    "id": 8,
+    "nombre": "Flying V Storm",
+    "marca": "Aurora",
+    "precio": 1510,
+    "imagen": "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&w=900&q=80",
+    "descripcion": "Estética revolucionaria con sustain excelente y tono agresivo."
+  },
+  {
+    "id": 9,
+    "nombre": "Super Strat Carbon",
+    "marca": "Pulse",
+    "precio": 1380,
+    "imagen": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?auto=format&fit=crop&w=900&q=80",
+    "descripcion": "Configuración moderna con trémolo y pastillas humbucker para versatilidad."
+  },
+  {
+    "id": 10,
+    "nombre": "Semi-Hollow Vintage",
+    "marca": "Maverick",
+    "precio": 1290,
+    "imagen": "https://images.unsplash.com/photo-1527434001645-8800dfea412d?auto=format&fit=crop&w=900&q=80",
+    "descripcion": "Tono cálido con cuerpo semihueco, ideal para jazz, blues y rock suave."
+  }
+]
