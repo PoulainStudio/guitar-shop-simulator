@@ -1,17 +1,17 @@
 ﻿:root {
-  --bg: #040307;
-  --panel: rgba(24, 14, 44, 0.9);
-  --surface: #121025;
-  --surface-soft: rgba(30, 16, 54, 0.9);
-  --text: #fff7ee;
-  --muted: #cdbfe6;
-  --electric: #47d1ff;
-  --neon: #b64bff;
-  --gold: #f2c94c;
-  --accent: #47d1ff;
-  --accent-2: #f2c94c;
-  --accent-shadow: rgba(71, 209, 255, 0.14);
-  --border: rgba(255, 255, 255, 0.06);
+  --bg: #12101a; /* Carbón retro con un sutil toque violáceo de fondo */
+  --panel: rgba(34, 25, 49, 0.9); /* Contenedores estilo casete vintage */
+  --surface: #1e1a2f;
+  --surface-soft: rgba(34, 25, 49, 0.9);
+  --text: #fffdf6; /* Blanco cálido / crema para tipografías, fatiga visual cero */
+  --muted: #a395c2; /* Lavanda apagado para textos secundarios */
+  --electric: #ff007f; /* ¡Hot Pink / Rosa Neón ochentero puro para botones principales! */
+  --neon: #00f0ff; /* Turquesa/Teal radical para acentos secundarios y links */
+  --gold: #ffbe0b; /* Amarillo láser para etiquetas y eyebrows */
+  --accent: #ff007f;
+  --accent-2: #ffbe0b;
+  --accent-shadow: rgba(255, 0, 127, 0.2);
+  --border: rgba(255, 255, 255, 0.08);
   --shadow: 0 26px 100px rgba(0, 0, 0, 0.45);
 }
 
@@ -29,21 +29,21 @@ body {
   min-height: 100vh;
   font-family: 'Space Grotesk', sans-serif;
   color: var(--text);
-  background: radial-gradient(circle at top left, rgba(142, 229, 255, 0.12), transparent 28%),
-              radial-gradient(circle at bottom right, rgba(255, 142, 223, 0.12), transparent 24%),
-              radial-gradient(circle at 20% 10%, rgba(247, 217, 117, 0.15), transparent 16%),
-              #05050f;
+  background: radial-gradient(circle at top left, rgba(255, 0, 127, 0.14), transparent 24%),
+              radial-gradient(circle at bottom right, rgba(0, 240, 255, 0.12), transparent 22%),
+              radial-gradient(circle at 30% 20%, rgba(255, 190, 11, 0.1), transparent 14%),
+              var(--bg);
 }
 
 body::before {
   content: '';
   position: fixed;
   inset: 0;
-  background-image: linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px),
-                    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+                    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px);
   background-size: 48px 48px;
   pointer-events: none;
-  opacity: 0.35;
+  opacity: 0.28;
 }
 
 button,

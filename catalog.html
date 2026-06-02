@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revolución Musical — Catálogo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- HEADER COMPARTIDO -->
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">RM</span>
+      <div>
+        <h1>Revolución Musical</h1>
+        <p>Catálogo ochentero de guitarras y accesorios</p>
+      </div>
+    </div>
+    <nav class="site-nav">
+      <a href="index.html" class="secondary-button">Inicio</a>
+      <a href="catalog.html" class="secondary-button">Catálogo</a>
+      <a href="contact.html" class="secondary-button">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <!-- HERO DEL CATÁLOGO -->
+    <section class="hero-panel" id="hero">
+      <div class="hero-left">
+        <div class="hero-badge">Catálogo</div>
+        <h2 class="hero-title">Explora nuestra colección de guitarras</h2>
+        <p class="hero-lead">Modelos inspirados en los 80s, diseñados para vibrar con cada riff. Selecciona, prueba y arma tu set retro.</p>
+        <div class="hero-actions">
+          <a href="#catalog" class="primary-button">Ir al catálogo</a>
+          <a href="#descripcion" class="secondary-button">¿Por qué elegirnos?</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?auto=format&fit=crop&w=1200&q=80" alt="Guitarras en catálogo">
+        </div>
+      </div>
+    </section>
+
+    <!-- FILTROS Y PRODUCTOS -->
+    <section class="catalog" id="catalog">
+      <div class="catalog-header">
+        <div>
+          <p class="eyebrow">Revolución Musical</p>
+          <h2>Catálogo disponible</h2>
+        </div>
+        <div class="filters">
+          <label>
+            Buscar
+            <input id="search-input" type="search" placeholder="Buscar por marca o modelo" aria-label="Buscar guitarras">
+          </label>
+        </div>
+      </div>
+      <div id="product-list" class="product-grid"></div>
+    </section>
+
+    <!-- ACCESORIOS -->
+    <section class="accessories" id="descripcion">
+      <h3>Completa tu setup</h3>
+      <p class="about-lead">Accesorios seleccionados para acompañar cada guitarra con el mejor estilo ochentero.</p>
+      <div class="accessory-grid">
+        <div class="accessory-card" data-name="Púas" data-price="5" data-image="https://images.unsplash.com/photo-1589382237343-8e3d4d9f8b2d?auto=format&fit=crop&w=600&q=60">
+          <img src="https://images.unsplash.com/photo-1589382237343-8e3d4d9f8b2d?auto=format&fit=crop&w=600&q=60" alt="Púas">
+          <h4>Púas pack</h4>
+          <span class="price">$5</span>
+          <button class="add-accessory">Agregar</button>
+        </div>
+        <div class="accessory-card" data-name="Correa" data-price="25" data-image="https://images.unsplash.com/photo-1600789091458-0efb7f7be9a9?auto=format&fit=crop&w=600&q=60">
+          <img src="https://images.unsplash.com/photo-1600789091458-0efb7f7be9a9?auto=format&fit=crop&w=600&q=60" alt="Correa">
+          <h4>Correa premium</h4>
+          <span class="price">$25</span>
+          <button class="add-accessory">Agregar</button>
+        </div>
+        <div class="accessory-card" data-name="Afinador" data-price="35" data-image="https://images.unsplash.com/photo-1585386959984-a4155221d34d?auto=format&fit=crop&w=600&q=60">
+          <img src="https://images.unsplash.com/photo-1585386959984-a4155221d34d?auto=format&fit=crop&w=600&q=60" alt="Afinador">
+          <h4>Afinador digital</h4>
+          <span class="price">$35</span>
+          <button class="add-accessory">Agregar</button>
+        </div>
+        <div class="accessory-card" data-name="Funda" data-price="60" data-image="https://images.unsplash.com/photo-1546443046-ed1ce6ffd1c4?auto=format&fit=crop&w=600&q=60">
+          <img src="https://images.unsplash.com/photo-1546443046-ed1ce6ffd1c4?auto=format&fit=crop&w=600&q=60" alt="Funda">
+          <h4>Funda acolchada</h4>
+          <span class="price">$60</span>
+          <button class="add-accessory">Agregar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL DE PRODUCTO -->
+  <div id="product-modal" class="modal" aria-hidden="true">
+    <div class="modal-panel">
+      <button id="modal-close" class="icon-button">✕</button>
+      <div class="modal-body">
+        <div class="modal-media">
+          <img id="modal-image" src="" alt="Detalle de guitarra">
+        </div>
+        <div class="modal-info">
+          <h3 id="modal-name"></h3>
+          <p id="modal-brand" class="muted"></p>
+          <p id="modal-desc"></p>
+          <div class="color-picker">
+            <label>Color</label>
+            <div id="color-options" class="swatches"></div>
+          </div>
+          <div class="modal-actions">
+            <strong id="modal-price"></strong>
+            <button id="modal-add" class="primary-button">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL DEL CARRITO -->
+  <aside class="cart-panel" id="cart-panel" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Carrito</h3>
+      <button id="close-cart" class="icon-button">✕</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-summary">
+      <div class="summary-row">
+        <span>Productos</span>
+        <span id="item-count">0</span>
+      </div>
+      <div class="summary-row">
+        <span>Total</span>
+        <strong id="cart-total">$0</strong>
+      </div>
+      <div class="cart-actions">
+        <button id="clear-cart" class="secondary-button">Vaciar carrito</button>
+        <button id="checkout" class="primary-button">Finalizar compra</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- FOOTER COMPARTIDO -->
+  <footer class="site-footer">
+    <p>Hecho por Poulain Studio — <a href="#terminos">Términos y Condiciones</a></p>
+  </footer>
+
+  <!-- Biblioteca SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Script principal del catálogo -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>

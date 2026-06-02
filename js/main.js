@@ -328,6 +328,18 @@ const beginnerPrompt = () => {
   });
 };
 
+// Mensaje emergente de promoción que se dispara 20 segundos después de entrar al catálogo.
+const catalogDiscountReminder = () => {
+  Swal.fire({
+    icon: 'success',
+    title: 'Oferta Flash',
+    text: '¡Llegaste al catálogo! 20 segundos después obtienes un descuento especial por tiempo limitado.',
+    confirmButtonText: 'Ver productos',
+    background: '#07020a',
+    color: '#fff'
+  });
+};
+
 const init = () => {
   loadCart();
   loadProducts();
@@ -346,6 +358,7 @@ const init = () => {
   exploreBtn && exploreBtn.addEventListener('click', () => document.getElementById('catalog').scrollIntoView({ behavior: 'smooth' }));
 
   setTimeout(beginnerPrompt, 700);
+  setTimeout(catalogDiscountReminder, 20000);
 };
 
 document.addEventListener('DOMContentLoaded', init);

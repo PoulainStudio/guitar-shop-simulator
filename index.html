@@ -1,172 +1,91 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Revolución Musical — Guitar Shop Simulator</title>
+  <title>Revolución Musical — Inicio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
-  <script src="js/main.js" defer></script>
 </head>
 <body>
+  <!-- HEADER COMPARTIDO -->
   <header class="site-header">
     <div class="brand">
       <span class="brand-mark">RM</span>
       <div>
         <h1>Revolución Musical</h1>
-        <p>Tienda especializada en guitarras · Estética ochentera</p>
+        <p>Glam rock, guitarra y espíritu ochentero</p>
       </div>
     </div>
-    <button id="open-cart" class="cart-button">Carrito <span id="cart-count">0</span></button>
+    <nav class="site-nav">
+      <a href="index.html" class="secondary-button">Inicio</a>
+      <a href="catalog.html" class="secondary-button">Catálogo</a>
+      <a href="contact.html" class="secondary-button">Contacto</a>
+    </nav>
   </header>
 
   <main class="layout">
-    <!-- HERO -->
+    <!-- HERO & MARCA -->
     <section class="hero-panel" id="hero">
       <div class="hero-left">
         <div class="hero-badge">Revolución Musical</div>
-        <h2 class="hero-title">La guitarra que va a acompañar tu historia</h2>
-        <p class="hero-lead">Instrumentos seleccionados, atención personalizada y espíritu rockero. Entra, prueba y enamórate.</p>
+        <h2 class="hero-title">La tienda retro que revive la era dorada del rock</h2>
+        <p class="hero-lead">Somos pasión por el sonido analógico, estética ochentera y guitarras que cuentan historias. Bienvenido al rincón donde el rock vuelve a brillar.</p>
         <div class="hero-actions">
-          <button id="explore-btn" class="primary-button">Explorar guitarras</button>
-          <a href="#catalog" class="ghost-link">Ver catálogo</a>
+          <a href="catalog.html" class="primary-button">Ver Catálogo</a>
+          <a href="contact.html" class="secondary-button">Contactanos</a>
         </div>
       </div>
       <div class="hero-right">
-        <div class="hero-image" id="hero-image">
-          <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?auto=format&fit=crop&w=1200&q=80" alt="Guitarra destacada">
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?auto=format&fit=crop&w=1200&q=80" alt="Guitarra ochentera">
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- POR QUÉ ELEGIRNOS -->
     <section class="about-panel" id="about">
-      <h3>Por qué elegir Revolución Musical</h3>
-      <p class="about-lead">Atención personalizada, selección cuidada y garantía en cada instrumento. Para quien arranca y quien ya toca.</p>
+      <h3>Por qué elegirnos</h3>
+      <p class="about-lead">Somos la tienda que combina calidad sonora, experiencia vintage y una selección curada para guitarristas exigentes.</p>
       <div class="about-grid">
         <div class="about-card">
-          <div class="icon">🎸</div>
-          <h4>Selección experta</h4>
-          <p>Modelos testeados por músicos y técnicos para asegurar calidad y tono.</p>
+          <h4>Calidad auténtica</h4>
+          <p>Instrumentos con tono cálido y carácter, inspirados en el rock clásico.</p>
         </div>
         <div class="about-card">
-          <div class="icon">🛠️</div>
-          <h4>Servicio y afinación</h4>
-          <p>Afinamos y revisamos cada instrumento antes del envío.</p>
+          <h4>Simulación inmersiva</h4>
+          <p>Experiencia digital diseñada para sentir cada cuerda como real.</p>
         </div>
         <div class="about-card">
-          <div class="icon">🤝</div>
-          <h4>Asesoramiento</h4>
-          <p>Recomendaciones según estilo, nivel y presupuesto.</p>
+          <h4>Pasión por el rock</h4>
+          <p>Creado para músicos que viven la nostalgia del Sunset Strip.</p>
         </div>
         <div class="about-card">
-          <div class="icon">⚡</div>
-          <h4>Estética vintage</h4>
-          <p>Inspirado en los carteles y luces neón de los 80.</p>
+          <h4>Estilo vintage</h4>
+          <p>Diseño y atmósfera ochentera en cada detalle visual y sonoro.</p>
         </div>
       </div>
     </section>
 
-    <!-- CATALOGO -->
-    <section class="catalog" id="catalog">
+    <!-- CTA FINAL -->
+    <section class="catalog" id="cta-final">
       <div class="catalog-header">
         <div>
-          <p class="eyebrow">Catálogo</p>
-          <h2>Guitarras disponibles</h2>
-        </div>
-        <div class="filters">
-          <label>
-            Buscar
-            <input id="search-input" type="search" placeholder="Marca o modelo" aria-label="Buscar guitarras">
-          </label>
+          <p class="eyebrow">¿Listo para rockear?</p>
+          <h2>Descubrí tu próxima guitarra</h2>
         </div>
       </div>
-      <div id="product-list" class="product-grid"></div>
-    </section>
-
-    <!-- ACCESSORIES -->
-    <section class="accessories" id="accessories">
-      <h3>Completá tu compra</h3>
-      <p class="about-lead">Accesorios seleccionados para acompañar tu instrumento.</p>
-      <div class="accessory-grid">
-        <div class="accessory-card" data-name="Púas" data-price="5" data-image="https://images.unsplash.com/photo-1589382237343-8e3d4d9f8b2d?auto=format&fit=crop&w=600&q=60">
-          <img src="https://images.unsplash.com/photo-1589382237343-8e3d4d9f8b2d?auto=format&fit=crop&w=600&q=60" alt="Púas">
-          <h4>Púas (pack)</h4>
-          <span class="price">$5</span>
-          <button class="add-accessory">Agregar</button>
-        </div>
-        <div class="accessory-card" data-name="Correa" data-price="25" data-image="https://images.unsplash.com/photo-1600789091458-0efb7f7be9a9?auto=format&fit=crop&w=600&q=60">
-          <img src="https://images.unsplash.com/photo-1600789091458-0efb7f7be9a9?auto=format&fit=crop&w=600&q=60" alt="Correa">
-          <h4>Correa premium</h4>
-          <span class="price">$25</span>
-          <button class="add-accessory">Agregar</button>
-        </div>
-        <div class="accessory-card" data-name="Afinador" data-price="35" data-image="https://images.unsplash.com/photo-1585386959984-a4155221d34d?auto=format&fit=crop&w=600&q=60">
-          <img src="https://images.unsplash.com/photo-1585386959984-a4155221d34d?auto=format&fit=crop&w=600&q=60" alt="Afinador">
-          <h4>Afinador digital</h4>
-          <span class="price">$35</span>
-          <button class="add-accessory">Agregar</button>
-        </div>
-        <div class="accessory-card" data-name="Funda" data-price="60" data-image="https://images.unsplash.com/photo-1546443046-ed1ce6ffd1c4?auto=format&fit=crop&w=600&q=60">
-          <img src="https://images.unsplash.com/photo-1546443046-ed1ce6ffd1c4?auto=format&fit=crop&w=600&q=60" alt="Funda">
-          <h4>Funda acolchada</h4>
-          <span class="price">$60</span>
-          <button class="add-accessory">Agregar</button>
-        </div>
+      <div class="hero-actions" style="justify-content:flex-start; gap:1rem;">
+        <a href="catalog.html" class="primary-button">Ver Catálogo</a>
       </div>
     </section>
-
   </main>
 
-  <!-- PRODUCT MODAL -->
-  <div id="product-modal" class="modal" aria-hidden="true">
-    <div class="modal-panel">
-      <button id="modal-close" class="icon-button">✕</button>
-      <div class="modal-body">
-        <div class="modal-media">
-          <img id="modal-image" src="" alt="">
-        </div>
-        <div class="modal-info">
-          <h3 id="modal-name"></h3>
-          <p id="modal-brand" class="muted"></p>
-          <p id="modal-desc"></p>
-          <div class="color-picker">
-            <label>Color</label>
-            <div id="color-options" class="swatches"></div>
-          </div>
-          <div class="modal-actions">
-            <strong id="modal-price"></strong>
-            <button id="modal-add" class="primary-button">Agregar al carrito</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <aside class="cart-panel" id="cart-panel" aria-hidden="true">
-    <div class="cart-header">
-      <h3>Carrito</h3>
-      <button id="close-cart" class="icon-button">✕</button>
-    </div>
-    <div id="cart-items" class="cart-items"></div>
-    <div class="cart-summary">
-      <div class="summary-row">
-        <span>Productos</span>
-        <span id="item-count">0</span>
-      </div>
-      <div class="summary-row">
-        <span>Total</span>
-        <strong id="cart-total">$0</strong>
-      </div>
-      <div class="cart-actions">
-        <button id="clear-cart" class="secondary-button">Vaciar carrito</button>
-        <button id="checkout" class="primary-button">Finalizar compra</button>
-      </div>
-    </div>
-  </aside>
-
-  </body>
+  <!-- FOOTER COMPARTIDO -->
+  <footer class="site-footer">
+    <p>Hecho por Poulain Studio — <a href="#terminos">Términos y Condiciones</a></p>
+  </footer>
+</body>
 </html>
