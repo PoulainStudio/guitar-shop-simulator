@@ -215,6 +215,29 @@ button {
   gap: 1.8rem;
 }
 
+.error-panel {
+  padding: 2rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.03);
+  color: var(--text);
+  max-width: 46rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.error-panel h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.4rem;
+  color: var(--gold);
+}
+
+.error-panel p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
 .catalog-header {
   display: flex;
   flex-wrap: wrap;

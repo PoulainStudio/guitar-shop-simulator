@@ -287,14 +287,24 @@ const filterProducts = query => {
   renderProducts(filtered);
 };
 
+const renderFetchError = () => {
+  productList.innerHTML = `
+    <div class="error-panel">
+      <h3>Oops... no se cargaron las guitarras</h3>
+      <p>Hubo un problema al leer el catálogo. Por favor, recarga la página o intenta más tarde.</p>
+    </div>
+  `;
+};
+
 const loadProducts = async () => {
   try {
-    const response = await fetch('data/guitarras.json');
+    const response = await fetch('./data/guitarras.json');
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
     products = await response.json();
     renderProducts(products);
-    document.querySelectorAll('.product-card').forEach((el, i)=> setTimeout(()=> el.classList.add('fade-in'), i*50));
+    document.querySelectorAll('.product-card').forEach((el, i) => setTimeout(() => el.classList.add('fade-in'), i * 50));
   } catch (err) {
-    Swal.fire({ icon: 'error', title: 'Error de carga', text: 'No fue posible cargar los productos.', background: '#07020a', color: '#fff' });
+    renderFetchError();
   }
 };
 
