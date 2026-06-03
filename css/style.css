@@ -187,6 +187,13 @@ button {
   background: linear-gradient(180deg, rgba(14,8,30,0.96), rgba(22,12,50,0.9));
   box-shadow: var(--shadow);
   align-items: center;
+  justify-items: center;
+}
+.hero-panel .hero-left {
+  text-align: center;
+}
+.hero-panel .hero-actions {
+  justify-content: center;
 }
 
 .hero-left .hero-badge {
@@ -224,8 +231,8 @@ button {
 }
 
 .hero-image {
-  width: 100%;
-  max-width: 380px;
+  width: min(100%, 320px);
+  max-width: 320px;
   border-radius: 1.2rem;
   overflow: hidden;
   border: 1px solid rgba(255,255,255,0.06);
