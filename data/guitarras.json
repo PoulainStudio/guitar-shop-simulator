@@ -1,10 +1,10 @@
-﻿[
+[
   {
     "id": 1,
     "nombre": "Kramer Baretta",
     "marca": "Kramer",
     "precio": 1499,
-    "imagen": "img/kramer-baretta.jpg",
+    "imagen": "assets/img/KRAMER-BARETTA.jpg",
     "descripcion": "La reina indiscutida del Hair Metal. Con un solo micrófono humbucker y el mítico Floyd Rose para hacer los dive-bombs más salvajes de los 80s.",
     "descripcion_larga": "La reina indiscutida del Hair Metal. Con un solo micrófono humbucker y el mítico Floyd Rose para hacer los dive-bombs más salvajes de los 80s.",
     "colores": ["#ff007f", "#ffea00", "#ffffff"]
@@ -14,7 +14,7 @@
     "nombre": "Ibanez RG550",
     "marca": "Ibanez",
     "precio": 1199,
-    "imagen": "img/ibanez-rg550.jpg",
+    "imagen": "assets/img/IBANEZ-RG550.JPG",
     "descripcion": "El nacimiento del 'Shred'. Mástil ultra fino Wizard, 24 trastes y colores neón chillones perfectos para solos a la velocidad de la luz.",
     "descripcion_larga": "El nacimiento del 'Shred'. Mástil ultra fino Wizard, 24 trastes y colores neón chillones perfectos para solos a la velocidad de la luz.",
     "colores": ["#ffea00", "#00f0ff", "#ff007f"]
@@ -24,7 +24,7 @@
     "nombre": "Jackson Randy Rhoads V",
     "marca": "Jackson",
     "precio": 2399,
-    "imagen": "img/jackson-rhoads.jpg",
+    "imagen": "assets/img/jackson-randy-rhoads-v.jpg",
     "descripcion": "Diseño asimétrico agresivo nacido de la colaboración con el legendario guitarrista de Ozzy Osbourne. Metal ochentero puro en tus manos.",
     "descripcion_larga": "Diseño asimétrico agresivo nacido de la colaboración con el legendario guitarrista de Ozzy Osbourne. Metal ochentero puro en tus manos.",
     "colores": ["#000000", "#ffffff"]
@@ -34,7 +34,7 @@
     "nombre": "Fender Frankenstrat",
     "marca": "EVH",
     "precio": 1999,
-    "imagen": "img/evh-frankenstrat.jpg",
+    "imagen": "assets/img/fender-frankstrat.jpg",
     "descripcion": "El Santo Grial del DIY de los 80s. El diseño de franjas caóticas de Eddie Van Halen que cambió la historia del rock para siempre.",
     "descripcion_larga": "El Santo Grial del DIY de los 80s. El diseño de franjas caóticas de Eddie Van Halen que cambió la historia del rock para siempre.",
     "colores": ["#ff3333"]
@@ -44,7 +44,7 @@
     "nombre": "Gibson Les Paul Custom Alpine White",
     "marca": "Gibson",
     "precio": 3899,
-    "imagen": "img/gibson-lp-white.jpg",
+    "imagen": "assets/img/gibsonlespaul-customaplinewhite.jpg",
     "descripcion": "El peso pesado del rock clásico evolucionado para los 80s. Elegancia, sustain infinito y el tono denso que definió los riffs de estadios.",
     "descripcion_larga": "El peso pesado del rock clásico evolucionado para los 80s. Elegancia, sustain infinito y el tono denso que definió los riffs de estadios.",
     "colores": ["#fffdf6", "#000000"]
@@ -54,7 +54,7 @@
     "nombre": "B.C. Rich Warlock",
     "marca": "B.C. Rich",
     "precio": 999,
-    "imagen": "img/bc-rich-warlock.jpg",
+    "imagen": "assets/img/b.c.-richwarlock.jpg",
     "descripcion": "Formas angulares extremas que gritan Glam y Thrash Metal. Elegida por los rebeldes de la época para destacar en cualquier escenario.",
     "descripcion_larga": "Formas angulares extremas que gritan Glam y Thrash Metal. Elegida por los rebeldes de la época para destacar en cualquier escenario.",
     "colores": ["#000000", "#ff007f"]

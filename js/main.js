@@ -19,7 +19,6 @@ const modalPrice = document.getElementById('modal-price');
 const colorOptions = document.getElementById('color-options');
 const modalAdd = document.getElementById('modal-add');
 const heroImage = document.getElementById('hero-image');
-const exploreBtn = document.getElementById('explore-btn');
 
 let products = [];
 let cart = [];
@@ -37,8 +36,8 @@ const loadCart = () => { const saved = localStorage.getItem(STORAGE_KEY); cart =
 
 const updateCartCounters = () => {
   const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
-  cartCount.textContent = totalItems;
-  itemCount.textContent = totalItems;
+  if (cartCount) cartCount.textContent = totalItems;
+  if (itemCount) itemCount.textContent = totalItems;
 };
 
 const calculateTotal = () => cart.reduce((total, item) => total + item.price * item.quantity, 0);
@@ -276,19 +275,11 @@ const handleCartClick = e => {
 const handleAccessoryClick = e => {
   const btn = e.target.closest('.add-accessory');
   if (!btn) return;
-  // Si el botón viene desde una tarjeta de accesorio, armamos un objeto compatible
   const name = btn.dataset.name || btn.closest('.product-card')?.dataset.name || btn.closest('[data-name]')?.dataset.name;
   const price = btn.dataset.price || btn.closest('.product-card')?.dataset.price || btn.closest('[data-price]')?.dataset.price;
   const image = btn.dataset.image || btn.closest('.product-card')?.dataset.image || btn.closest('[data-image]')?.dataset.image;
-  // Construimos un objeto con propiedades equivalentes a las guitarras para reusar addToCart
-  const accessoryProduct = {
-    id: `acc-${name}`,
-    nombre: name,
-    marca: 'Accesorio',
-    precio: Number(price),
-    imagen: image
-  };
-  addToCart(accessoryProduct);
+  if (!name || !price) return;
+  addAccessoryToCart(name, price, image);
 };
 
 const filterProducts = query => {
@@ -355,17 +346,16 @@ const init = () => {
   loadProducts();
   renderCart();
 
-  productList.addEventListener('click', handleProductListClick);
-  cartItemsContainer.addEventListener('click', handleCartClick);
+  if (productList) productList.addEventListener('click', handleProductListClick);
+  if (cartItemsContainer) cartItemsContainer.addEventListener('click', handleCartClick);
   document.addEventListener('click', handleAccessoryClick);
-  openCartButton.addEventListener('click', openCart);
-  closeCartButton.addEventListener('click', closeCart);
-  clearCartButton.addEventListener('click', clearCart);
-  checkoutButton.addEventListener('click', checkout);
-  searchInput.addEventListener('input', e => filterProducts(e.target.value));
-  modalClose.addEventListener('click', closeProductModal);
-  modalAdd.addEventListener('click', () => { if (currentModalProduct) addToCart(currentModalProduct, selectedColor); closeProductModal(); });
-  exploreBtn && exploreBtn.addEventListener('click', () => document.getElementById('catalog').scrollIntoView({ behavior: 'smooth' }));
+  if (openCartButton) openCartButton.addEventListener('click', openCart);
+  if (closeCartButton) closeCartButton.addEventListener('click', closeCart);
+  if (clearCartButton) clearCartButton.addEventListener('click', clearCart);
+  if (checkoutButton) checkoutButton.addEventListener('click', checkout);
+  if (searchInput) searchInput.addEventListener('input', e => filterProducts(e.target.value));
+  if (modalClose) modalClose.addEventListener('click', closeProductModal);
+  if (modalAdd) modalAdd.addEventListener('click', () => { if (currentModalProduct) addToCart(currentModalProduct, selectedColor); closeProductModal(); });
 
   setTimeout(beginnerPrompt, 700);
   setTimeout(catalogDiscountReminder, 20000);
