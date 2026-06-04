@@ -47,16 +47,3 @@ VS Code (Live Server):
 
 - Instalar la extensión Live Server y seleccionar "Open with Live Server" en `index.html`.
 
-## Notas y próximos pasos sugeridos
-- Reemplazar `assets/img/placeholder-guitar.jpg` por una imagen local de mayor resolución para el hero.
-- Mejorar accesibilidad con focus trap en el modal y roles ARIA detallados.
-- Añadir pruebas visuales y comprobación cross-browser.
-
----
-
-Si querés, puedo:
-- crear o añadir la imagen `assets/img/placeholder-guitar.jpg`,
-- implementar focus trap y cierre con `Esc` en el modal,
-- generar una versión optimizada para impresión o PDF.
-
-Decime qué preferís que haga a continuación.
