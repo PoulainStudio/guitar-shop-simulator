@@ -357,8 +357,8 @@ const init = () => {
   if (modalClose) modalClose.addEventListener('click', closeProductModal);
   if (modalAdd) modalAdd.addEventListener('click', () => { if (currentModalProduct) addToCart(currentModalProduct, selectedColor); closeProductModal(); });
 
-  setTimeout(beginnerPrompt, 700);
-  setTimeout(catalogDiscountReminder, 20000);
+  setTimeout(beginnerPrompt, 8000);
+  setTimeout(catalogDiscountReminder, 25000);
 };
 
 document.addEventListener('DOMContentLoaded', init);
